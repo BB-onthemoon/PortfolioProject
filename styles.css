@@ -1,0 +1,257 @@
+:root {
+    --nav-height: 50px;
+}
+
+header {
+    font-size: 20px;
+    background-image: url("/Port_images/port_header_bg.png");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: calc(var(--nav-height)*1.15);
+    z-index: 10;
+}
+
+.headtext {
+    text-align: center;
+    margin-top: -1px;
+    color: #660099;
+}
+
+.container {
+    margin-left: 10%;
+    & .slideshow_box{
+        position: relative;
+    }
+}
+
+nav {
+    position: fixed;
+    top: var(--nav-height);
+    width: 100%;
+    height: var(--nav-height);
+    z-index: 1000;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: calc(var(--nav-height) * 2.3);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(103, 67, 146, 1);
+    border-bottom: 1px solid #9a76b2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15), 0 4px 4px rgba(0, 0, 0, .15);
+}
+
+nav ul li {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+
+    display: block;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 25px 25px;
+    text-decoration: none;
+}
+
+nav ul li :hover {
+    background-color: #663366;
+    cursor: pointer;
+}
+
+#leftbar-img {
+    position: fixed;
+    width: 9%;
+    height: 100%;
+    background-color: rgba(127, 67, 133, 0.778);
+    z-index: -1;
+    font-size: larger;
+    text-align: center;
+}
+
+.description {
+    border: 2px solid gray;
+    margin: 20px;
+    width: 90%;
+    height: 30%;
+    justify-content: center;
+    padding: 1rem;
+    text-align: left;
+}
+.grid-container-home {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    /* ช่องว่างระหว่างคอลัมน์ */
+    padding: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* แบ่งครึ่งเท่ากัน */
+    gap: 2rem;
+    /* ช่องว่างระหว่างคอลัมน์ */
+    padding: 1rem;
+}
+
+/* เส้นแบ่งกลาง */
+.col-right {
+    border-left: 2px solid #660066;
+    padding-left: 2rem;
+}
+
+/* Responsive — กลับเป็น 1 คอลัมน์บนมือถือ */
+@media (max-width: 768px) {
+    .grid-container,.grid-container-home {
+        grid-template-columns: 1fr;
+    }
+
+    .col-right {
+        border-left: none;
+        border-top: 2px solid #660066;
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+}
+
+.carousel {
+    position: fixed;
+    width: 90%;
+    border: 1px solid #e9ecec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15), 0 4px 4px rgba(0, 0, 0, .15);
+    overflow: hidden;
+}
+
+/* ซ่อนรูปที่อยู่นอกกรอบ */
+
+.slides {
+    display: flex;
+    /* เรียงรูปแนวนอน */
+    transition: transform 0.35s;
+    /* animate smooth */
+}
+
+.slide {
+    min-width: 100%;
+    /* แต่ละรูปต้องมีความกว้างเท่ากับ .carousel */
+    height: 360px;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel button {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+    font-size: 2rem;
+    text-align: center;
+
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:hover {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.carousel .btn-prev {
+    left: 10px;
+    cursor: pointer;
+}
+
+.carousel .btn-next {
+    right: 10px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    margin-top: auto;
+    background-color: #161e2e;
+    color: white;
+
+    & .contact {
+        padding-top: 1rem;
+        margin-left: 9rem;
+        margin-right: 9rem;
+
+        & .contact_container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+
+            & .contact_item {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            & p{
+                margin: 1px;
+            }
+
+            & .contact_head{
+                color: #a2a2c7;
+            };
+
+            & i {
+                font-size: 1.5rem;
+                width: 44px;
+                height: 44px;
+                color:rgba(255, 255, 255,0.7);
+                background: #1e2a3a;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+            }
+        }
+    }
+}
+
+.copy {
+    margin-top: 2.5rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    border-top: 2px solid rgba(128, 128, 128, 0.4);
+    text-align: center;
+
+    & span {
+        color: #a2a2c7;
+    }
+}
