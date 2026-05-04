@@ -8,7 +8,7 @@ html {
 
 header {
     font-size: 20px;
-    background-image: url("/port_images/port_header_bg.png");
+    background-image: url("./port_images/port_header_bg.png");
     background-size: cover;
     position: fixed;
     top: 0;
