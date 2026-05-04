@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body style="background-color: #30302e;">
     <header>
         <h1 class="headtext">Add heading title or logo </h1>
     </header>
@@ -22,52 +22,91 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <div id="leftbar-img">add decoration here</div>
+
     <section class="container">
-        <div>
-            <h1>Project & Experience</h1>
+        <div class="proj_title">Project & Experience</div>
+        <div class="proj_container">
+            <div class="proj_head">
+                <div>
+                    <p class="proj_name">Reinforced Concrete Bridge Across Ping River</p>
+                    <p class="proj_period">Nov 2025 - Apr 2026</p>
+                    <p class="proj_des">Capstone Project Chiang Mai University</p>
+                </div>
+                <span class="proj_bandage">Capstone</span>
+            </div>
+            <div class="description">
+                "Structural Design of the Ping River Bridge (100m)
+                Civil engineering design of a new 100m bridge in Chiang Mai, modeled after the Navamindradhiraj
+                Bridge.
+                Key features include a high-durability structural system engineered for 0.3g peak seismic
+                acceleration
+                and extreme environmental forces. The project provides a vital transit link to alleviate regional
+                traffic congestion."
+            </div>
+            <p class="task_title">What I Have Done</p>
+            <div class="task_grid">
+                <ul class="task col-left">
+                    <li>Modeling & analysis in CSI Bridge</li>
+                    <li>Bridge modeling in Revit for cost estimation</li>
+                    <li>Designed prestressed box beam & pile foundation</li>
+                    <li>Drawing 2D foundation & layout plan</li>
+                    <li>Participated in cost estimation</li>
+                </ul>
+                <div class="slideshow_box col-right">
+                    <div class="carousel">
+                        <div class="slides" id="ProjSlides">
+                            <div class="slide"><img src="/Port_images/testpic1.jpg"></div>
+                            <div class="slide"><img src="/Port_images/testpic2.jpg"></div>
+                            <div class="slide"><img src="/Port_images/testpic3.jpg"></div>
+                        </div>
+
+                        <button class="btn-prev" id="proj-prev"> &#10094 </button>
+                        <button class="btn-next" id="proj-next"> &#10095 </button>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="grid-container">
-            <div id="projects" class="col-left">
-                <h2>Capstone Project</h2>
-                <h3>Nov 2025-Apr 2026</h3>
-                <h3>Reinforced concrete bridge across Ping River</h3>
-                <p class="description">"Structural Design of the Ping River Bridge (100m)
-                    Civil engineering design of a new 100m bridge in Chiang Mai, modeled after the Navamindradhiraj
-                    Bridge.
-                    Key features include a high-durability structural system engineered for 0.3g peak seismic
-                    acceleration
-                    and extreme environmental forces. The project provides a vital transit link to alleviate regional
-                    traffic congestion."</p>
-                <h4>What I Have Done</h4>
-                <ul class="project-list">
-                    <p>
-                        <li>Modeling and analysis of bridge models and structures in CSI Bridge</li>
-                        <li>Modeling the bridge model in Revit for cost estimation</li>
-                        <li>Participated in designing prestressed box beam and pile foundation</li>
-                        <li>Drawing a 2D plan of foundation and another layout</li>
-                        <li>Participated in cost estimation</li>
-                    </p>
+
+        <div class="intern_container">
+            <div class="intern_head">
+                <div>
+                    <p class="intern_name">Site Engineer Intern - Siam Multi Cons Co., Ltd. (SMC)</p>
+                    <p class="intern_period">Apr 2025 - June 2026</p>
+                    <p class="intern_des">Bangkok & Chonburi</p>
+                </div>
+                <span class="intern_bandage">Internship</span>
+            </div>
+            <div class="description">
+                "Had an internship experience at Siam Multi Cons Co., LTD, at the One Origin
+                Phayathai project, the One Origin Sanampao project in Bangkok, and at the Phayathai Bo Win Hospital
+                project in Chonburi."
+            </div>
+            <p class="task_title">What I Have Done</p>
+            <div class="task_grid">
+                <div class="slideshow_box">
+                    <div class="carousel col-left">
+                        <div class="slides" id="InternSlides">
+                            <div class="slide"><img src="/Port_images/testpic1.jpg"></div>
+                            <div class="slide"><img src="/Port_images/testpic2.jpg"></div>
+                            <div class="slide"><img src="/Port_images/testpic3.jpg"></div>
+                        </div>
+
+                        <button class="btn-prev" id="intern-prev"> &#10094 </button>
+                        <button class="btn-next" id="intern-next"> &#10095 </button>
+                    </div>
+                </div>
+                <ul class="task col-right">
+                    <li>Site supervision & quality control.</li>
+                    <li>Collaborated with engineers & contractors.</li>
+                    <li>Daily reports & documentation.</li>
+                    <li>Monitored construction progress.</li>
+                    <li>Safety inspections & protocols.</li>
                 </ul>
             </div>
-            <div id="experience" class="col-right">
-                <h2>Internship Experience</h2>
-                <h3>Apr 2025 - June 2025</h3>
-                <h3>Site Engineer Intern at Siam Multi Cons Co., LTD (SMC)</h3>
-                <p class="description">"Had an internship experience at Siam Multi Cons Co., LTD, at the One Origin
-                    Phayathai project, the One Origin Sanampao project in Bangkok, and at the Phayathai Bo Win Hospital
-                    project in Chonburi."</p>
-                <h4>What I Have Done</h4>
-                <ul class="exp-list">
-                    <p>
-                        <li>Assisted in site supervision and quality control of architectural work.</li>
-                        <li>Monitored construction progress and ensured compliance with project specifications.</li>
-                        <li>Collaborated with engineers and contractors to resolve on-site issues.</li>
-                        <li>Conducted safety inspections and implemented safety protocols.</li>
-                        <li>Prepared daily reports and documentation of site activities.</li>
-                    </p>
-            </div>
+
         </div>
+
     </section>
     <footer>
         <div id="contact" class="contact">
@@ -98,6 +137,7 @@
             <p>Copyright &copy; 2026<span class="cspan"> My Simple Portfolio Project.</span> All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

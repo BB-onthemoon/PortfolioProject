@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body style="background-color: #30302e;">
     <header>
         <h1 class="headtext">Add heading title or logo </h1>
     </header>
@@ -23,45 +23,126 @@
         </ul>
     </nav>
     <section class="container">
-        <div>
-            <h1>About Me</h1>
-        </div>
         <section class="profile">
-            <div id="about">
-                <h2 class="name">THANAPHAT PIYAWONGLAWAN</h2>
+            <div id="about" class="aboutme_container">
+                <p class="profile_title">About Me</p>
+                <p class="name">THANAPHAT PIYAWONGLAWAN</p>
+                <p class="specialist">Civil Engineer Structural Design Specialist</p>
+                <p class="gpa">Chiang Mai University GPA:3.49 </p>
 
-                <h3 class="profile summary">Profile Summary</h3>
-                <ul>
-                    <p>
+            </div>
+            <div class="grid-container-aboutme">
+                <div class="profile_summary">
+                    <div class="card_title">Profile Summary</div>
+                    <ul class="card_info">
                         <li>Interested in Structural Design and Building Information Modeling (BIM).</li>
                         <li>Had an internship experience as site engineer.</li>
                         <li>Participated in designing of bridge structures for the Capstone Project.</li>
                         <li>Expert in Microsoft Office Ex. Excel/Word/PowerPoint</li>
                         <li>Intermediate in Civil Engineering Software Ex. ETABS/Bridge/Robot/CAD/Revit</li>
-                        <li>Eager and expect to join a professional team as a junior to contribute practical
-                            skills while learning best practices from senior engineers</li>
-                    </p>
-                </ul>
+                    </ul>
+                </div>
+                <div class="education">
+                    <div class="card_title">Education</div>
+                    <ul class="card_info">
+                      
+                            <li class="edu_title">Bachelor of Engineering in Civil Engineering<br>Chiang Mai
+                                University</br></li>
+                            <li class="edu_yr">2022-2026 <span style="color: #eab308; font-weight: 600;">Second Class Honors</span></li>
+                            <li class="edu_title">HIGH SCHOOL<br>Chalermkwansatree School</br></li>
+                            <li class="edu_yr">2019-2022</li>
+                        
+                    </ul>
+                </div>
             </div>
-            <div id="education">
-                <h3 class="education title">Education</h3>
-                <p>2022-2026</p>
-                <ul>
-                    <p>
-                        <li>Bachelor of Engineering in Civil Engineering<br>Chiang Mai University</br></li>
-                        <li>Second Class Honors (GPA: 3.49)</li>
-                    </p>
-                </ul>
+            <div class="skills_container">
+                <div class="skill_title">Key Skills</div>
+                <div class="grid-container-aboutme-skills">
+                    <div class="skill_col_left">
+                        <ul class="skill_img_list">
+                            <li class="skill">
+                                <img src="/Port_images/etabsicon.png" alt="ETABS">
+                                <div class="skill_info">
+                                    <div class="skill_name">ETABS</div>
+                                    <div class="skill_progress">
+                                        <div class="skill_bar">
+                                            <div class="skill_bar_fill" style="width: 60%;"></div>
+                                        </div>
+                                        <span class="skill_percentage">60%</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="skill">
+                                <img src="/Port_images/bridgeicon.png" alt="Bridge">
+                                <div class="skill_info">
+                                    <div class="skill_name">Bridge</div>
+                                    <div class="skill_progress">
+                                        <div class="skill_bar">
+                                            <div class="skill_bar_fill" style="width: 50%;"></div>
+                                        </div>
+                                        <span class="skill_percentage">50%</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="skill">
+                                <img src="/Port_images/excelicontrans.png" alt="Excel">
+                                <div class="skill_info">
+                                    <div class="skill_name">Excel</div>
+                                    <div class="skill_progress">
+                                        <div class="skill_bar">
+                                            <div class="skill_bar_fill" style="width: 70%;"></div>
+                                        </div>
+                                        <span class="skill_percentage">70%</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill_col_right">
+                        <ul class="skill_img_list">
+                            <li class="skill">
+                                <img src="/Port_images/autocad-icon.webp" alt="AutoCAD">
+                                <div class="skill_info">
+                                    <div class="skill_name">AutoCAD</div>
+                                    <div class="skill_progress">
+                                        <div class="skill_bar">
+                                            <div class="skill_bar_fill" style="width: 60%;"></div>
+                                        </div>
+                                        <span class="skill_percentage">60%</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="skill">
+                                <img src="/Port_images/autodesk-robot-structural-analysis-professional-product-icon.svg"
+                                    alt="Robot">
+                                <div class="skill_info">
+                                    <div class="skill_name">Robot</div>
+                                    <div class="skill_progress">
+                                        <div class="skill_bar">
+                                            <div class="skill_bar_fill" style="width: 50%;"></div>
+                                        </div>
+                                        <span class="skill_percentage">50%</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="skill">
+                                <img src="/Port_images/autodesk-revit-icon.webp" alt="Revit">
+                                <div class="skill_info">
+                                    <div class="skill_name">Revit</div>
+                                    <div class="skill_progress">
+                                        <div class="skill_bar">
+                                            <div class="skill_bar_fill" style="width: 50%;"></div>
+                                        </div>
+                                        <span class="skill_percentage">50%</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div id="skills">
-                <h3 class="key skills title">Key Skills</h3>
-                <ul>
-                    <p>
-                        <li><span class="key skill">Office:</span>Excel/Word/PowerPoint</li>
-                        <li><span class="key skill">CSI Software:</span> ETABS/Bridge</li>
-                        <li><span class="key skill">Autodesk Software:</span> Robot/CAD/Revit</li>
-                    </p>
-                </ul>
+            <div class="determination">
+                <q>Eager to join a professional team as a junior engineer</q>
             </div>
         </section>
     </section>
@@ -93,7 +174,7 @@
         <div class="copy">
             <p>Copyright &copy; 2026<span class="cspan"> My Simple Portfolio Project.</span> All rights reserved.</p>
         </div>
-    </footer>    
+    </footer>
 
 </body>
 
