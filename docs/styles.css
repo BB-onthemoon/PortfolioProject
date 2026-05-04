@@ -8,8 +8,10 @@ html {
 
 header {
     font-size: 20px;
-    background-image: url("./port_images/port_header_bg.png");
+    background-image: url("port_images/port_header_bg.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: fixed;
     top: 0;
     width: 100%;
