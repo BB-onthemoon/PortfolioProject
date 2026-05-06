@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/business-finance-concept-featuring-investment-portfolio-vector-style-illustration-design_1226483-9643.jpg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1 class="headtext">Add heading title or logo </h1>
+        <img src="https://library.cmu.ac.th/layout/default/images/CMU_WEB/Chiang_Mai_University_Logo.png" alt="logo" class="header_logo">
+        <h1 class="headtext">WELLCOME TO MY PORTFOLIO</h1>
     </header>
     <nav class="topnav">
         <ul class="topnavbar">
@@ -28,25 +35,46 @@
             <div class="slideshow_box col-left">
                 <div class="carousel">
                     <div class="slides" id="HomeSlides">
-                        <div class="slide"><img src="port_images/testpic1.jpg"></div>
-                        <div class="slide"><img src="port_images/testpic2.jpg"></div>
-                        <div class="slide"><img src="port_images/testpic3.jpg"></div>
+                        <div class="slide"><img src="port_images/home5.JPG"></div>
+                        <div class="slide"><img src="port_images/home1.png"></div>
+                        <div class="slide"><img src="port_images/home2.JPG"></div>
+                        <div class="slide"><img src="port_images/home3.JPG"></div>
+                        <div class="slide"><img src="port_images/home4.JPG"></div>
+                        <div class="slide"><img src="port_images/home7.jpg"></div>
                     </div>
 
                     <button class="btn-prev" id="home-prev"> &#10094 </button>
                     <button class="btn-next" id="home-next"> &#10095 </button>
                 </div>
             </div>
-            <div class="hero col-right">
-                <h1>I'm Thanaphat Civil Engineer.</h1>
-                
-                <img src="port_images/propic.JPG" alt="profile_picture" class="profile_pic">
-                
+            <div class="hero_card col-right">
+                <div class="hero-grid">
+                    <img src="port_images/propic.JPG" alt="profile_picture" class="profile_pic">
+                    <div class ="short">
+                        <q class="name">I'm Thanaphat Civil Engineer.</q>
+                        <ul>
+                            <li>Structural Designer</li>
+                            <li>BIM Modeler</li>
+                            <li>QS (Quantity Surveyor)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filenav">
+                    <ul>
+                        <li><a href="port_files/650610052.pdf" target="_blank">Transcript</a></li>
+                        <li><a href="port_files/Thanaphat Piyawonglawan Resume.pdf" target="_blank">Resume</a></li>
+                        <li><a href="port_files/033-DESIGN OF REINFORCED CONCRETE BRIDGE STRUCTURES .pdf" target="_blank">Project Report</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
+        
     </section>
-    <footer style="opacity:0.85;">
+    <section class="banner">
+        <h1 class="ent">ENTANEER CMU</h1>
+    </section>
+    <footer>
         <div id="contact" class="contact">
             <h1>Contact Me</h1>
             <div class="contact_container">

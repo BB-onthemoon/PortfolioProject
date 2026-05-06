@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/business-finance-concept-featuring-investment-portfolio-vector-style-illustration-design_1226483-9643.jpg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1 class="headtext">Add heading title or logo </h1>
+        <img src="https://library.cmu.ac.th/layout/default/images/CMU_WEB/Chiang_Mai_University_Logo.png" alt="logo" class="header_logo">
+        <h1 class="headtext">WELLCOME TO MY PORTFOLIO</h1>
     </header>
     <nav class="topnav">
         <ul class="topnavbar">
@@ -20,6 +27,237 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <section class="gallery-section">
+        <div class="gallery">
+            <div class="hobbies_title">My Gallery</div>
+            <div class="gallery-grid">
+                <img src="port_images/Hutao_Summer.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/New_year2022.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/The_Reason_to Believe.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/Anya.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/Cal2.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/Pair.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/Pim.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/Pimfa.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/Pumpui2.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/Tonwa.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/Stamp.jpg" class="gallery-img" onclick="openLightbox(this)">
+                <img src="port_images/Opal.jpg" class="gallery-img" onclick="openLightbox(this)">
+            </div>
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="series-section">
+        <div class="series">
+            <div class="hobbies_title">Series & Movie</div>
+            <div class="series-grid">
+                <div class="series_box">
+                    <div class="poster">
+                        <img src="https://images5.alphacoders.com/530/530478.jpg" class="series_img">
+                    </div>
+                    <p class="series_name">Star Wars</p>
+                    <p class="series_genres">Space Opera / Epic Sci-Fi</p>
+                </div>
+                <div class="series_box">
+                    <div class="poster">
+                        <img src="https://wallpaperaccess.com/full/8088314.jpg" class="series_img">
+                    </div>
+                    <p class="series_name">Harry Potter</p>
+                    <p class="series_genres">Fantasy / Coming-of-age</p>
+                </div>
+                <div class="series_box">
+                    <div class="poster">
+                        <img src="https://th.bing.com/th/id/OIP.Axw1NgHtkA2ra2Y9e2d9tAHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            class="series_img">
+                    </div>
+                    <p class="series_name">Titanic</p>
+                    <p class="series_genres">Epic Romance / Disaster / Drama</p>
+                </div>
+                <div class="series_box">
+                    <div class="poster">
+                        <img src="https://k-drama.de/wp-content/uploads/2026/01/can-this-love-be-translated-titel-1.webp"
+                            class="series_img">
+                    </div>
+                    <p class="series_name">Can This Love Be Translated?</p>
+                    <p class="series_genres">Romantic Comedy</p>
+                </div>
+                <div class="series_box">
+                    <div class="poster">
+                        <img src="https://i.ytimg.com/vi/1XFWr10FzFQ/maxresdefault.jpg" class="series_img">
+                    </div>
+                    <p class="series_name">Business Proposal</p>
+                    <p class="series_genres">Romantic Comedy</p>
+                </div>
+                <div class="series_box">
+                    <div class="poster">
+                        <img src="https://www.trueid.net/watch/_next/image?url=https:%2F%2Fcms.dmpcdn.com%2Fmovie%2F2024%2F04%2F08%2Fa1ca3830-f54f-11ee-8000-c189a09cb558_webp_original.webp&w=3840&q=75"
+                            class="series_img">
+                    </div>
+                    <p class="series_name">Blossoms in Adversity</p>
+                    <p class="series_genres">Historical / Family / Business / Feminist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="music-section">
+        <div class="hobbies_title">Favorite Music</div>
+        <div class="music-grid">
+            <div class="music_item">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Video122/v4/fb/fd/bb/fbfdbb61-1029-04a7-33e1-d997b9639d19/ANTCD-A0000007465.jpg/1200x630mv.jpg"
+                    class="music-pic">
+                <div class="music_detail">
+                    <p class="music_name">夏霞</p>
+                    <p class="music_artist">Atarayo</p>
+                </div>
+                <audio controls>
+                    <source
+                        src="port_music/あたらよ - 夏霞(Music Video).mp3">
+                </audio>
+                <p class="music_bandage">J-Pop/rock</p>
+            </div>
+            <div class="music_item">
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/Music112/v4/35/b6/ff/35b6ff2d-d8e4-5739-28d3-9a1191a5a856/4547366350791.jpg/1200x1200bf-60.jpg"
+                    class="music-pic">
+                <div class="music_detail">
+                    <p class="music_name">Ref:rain</p>
+                    <p class="music_artist">Aimer</p>
+                </div>
+                <audio controls>
+                    <source
+                        src="port_music/Aimer 『Ref_rain』MUSIC VIDEO(5th album『Sun Dance』『Penny Rain』2019_04_10（水）2枚同時発売).mp3">
+                </audio>
+                <p class="music_bandage">J-Pop/Ballad</p>
+            </div>
+            <div class="music_item">
+                <img src="https://i.ytimg.com/vi/82s8PRgYSRU/maxresdefault.jpg"
+                    class="music-pic">
+                <div class="music_detail">
+                    <p class="music_name">Daydream</p>
+                    <p class="music_artist">Wendy</p>
+                </div>
+                <audio controls>
+                    <source
+                        src="port_music/Daydream.mp3">
+                </audio>
+                <p class="music_bandage">R&B/Soul</p>
+            </div>
+            <div class="music_item">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/99c08eac-1777-4459-81b0-341be2da5190/dcpc65k-27262d2c-81ef-4b31-8ed6-46f6b98d6595.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk5YzA4ZWFjLTE3NzctNDQ1OS04MWIwLTM0MWJlMmRhNTE5MFwvZGNwYzY1ay0yNzI2MmQyYy04MWVmLTRiMzEtOGVkNi00NmY2Yjk4ZDY1OTUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XdUaMWl9DU56vGaRHEzYnzMWSG5iR-fWLogOi7Oq4X4"
+                    class="music-pic">
+                <div class="music_detail">
+                    <p class="music_name">BBIBBI</p>
+                    <p class="music_artist">IU</p>
+                </div>
+                <audio controls>
+                    <source
+                        src="port_music/[MV] IU(아이유) _ BBIBBI(삐삐).mp3">
+                </audio>
+                <p class="music_bandage">R&B</p>
+            </div>
+            <div class="music_item">
+                <img src="https://artwork.anghcdn.co/?id=187018009&size=296"
+                    class="music-pic">
+                <div class="music_detail">
+                    <p class="music_name">Let Her Go</p>
+                    <p class="music_artist">Passenger</p>
+                </div>
+                <audio controls>
+                    <source
+                        src="port_music/Passenger _ Let Her Go (Official Video).mp3">
+                </audio>
+                <p class="music_bandage">Indie Folk</p>
+            </div>
+            <div class="music_item">
+                <img src="https://i1.sndcdn.com/artworks-000005777550-ihkoxw-t500x500.jpg"
+                    class="music-pic">
+                <div class="music_detail">
+                    <p class="music_name">Wish You Were Hear</p>
+                    <p class="music_artist">Avrill Lavigne</p>
+                </div>
+                <audio controls>
+                    <source
+                        src="port_music/Avril Lavigne - Wish You Were Here (Official Video).mp3">
+                </audio>
+                <p class="music_bandage">Pop Rock Ballad</p>
+            </div>
+        </div>
+    </section>
+    <section class="fragrance-section">
+        <div class="hobbies_title">FRAGRANCE COLLECTION</div>
+        <div class="frag-grid">
+            <div class="frag-card">
+                <img src="port_images/f2.jpg" class="frag-img">
+                <div class="card-body">
+                    <p class="frag-name">Tuxedo</p>
+                    <p class="frag-brand">Yves Saint Laurent</p>
+
+                    <div class="tags">
+                        <span class="tag" style="background-color: rgb(186, 65, 0);">Spicy-Warm</span>
+                        <span class="tag" style="background-color: rgb(59, 146, 0);">Patcholui</span>
+                    </div>
+
+                    <div class="seasons">
+                        <span>Spring</span>
+                        <span>Winter</span>
+                    </div>
+                </div>
+            </div>
+            <div class="frag-card">
+                <img src="port_images/f4.jpg" class="frag-img">
+                <div class="card-body">
+                    <p class="frag-name">Angle Share</p>
+                    <p class="frag-brand">By Killian</p>
+
+                    <div class="tags">
+                        <span class="tag" style="background-color: rgb(253, 200, 127);">Gourmand</span>
+                        <span class="tag" style="background-color: rgb(154, 90, 0);">Cinnamon</span>
+                    </div>
+
+                    <div class="seasons">
+                        <span>Winter</span>
+                        <span>Autumn</span>
+                    </div>
+                </div>
+            </div>
+            <div class="frag-card">
+                <img src="port_images/3.jpg" class="frag-img">
+                <div class="card-body">
+                    <p class="frag-name">Whisper of The Wood</p>
+                    <p class="frag-brand">Vive Perfume</p>
+
+                    <div class="tags">
+                        <span class="tag" style="background-color: rgb(221, 193, 8);">Fruity</span>
+                        <span class="tag" style="background-color: rgb(185, 117, 13);">Woody</span>
+                    </div>
+
+                    <div class="seasons">
+                        <span>Spring</span>
+                        <span>Summer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="frag-card">
+                <img src="port_images/f1.jpg" class="frag-img">
+                <div class="card-body">
+                    <p class="frag-name">La Colle Noire</p>
+                    <p class="frag-brand">Christain Dior</p>
+
+                    <div class="tags">
+                        <span class="tag" style="background-color: pink;">Rose</span>
+                        <span class="tag" style="background-color: rgb(187, 78, 96);">Floral</span>
+                    </div>
+
+                    <div class="seasons">
+                        <span>Spring</span>
+                        <span>Summer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div id="contact" class="contact">
             <h1>Contact Me</h1>
@@ -48,6 +286,8 @@
         <div class="copy">
             <p>Copyright &copy; 2026<span class="cspan"> My Simple Portfolio Project.</span> All rights reserved.</p>
         </div>
-    </footer>    
+    </footer>
+    <script src="script.js"></script
 </body>
+
 </html>

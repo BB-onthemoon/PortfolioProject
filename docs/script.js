@@ -38,3 +38,11 @@ function initSlider({ slidesContainerId, prevBtnId, nextBtnId }) {
 initSlider({ slidesContainerId: 'HomeSlides', prevBtnId: 'home-prev', nextBtnId: 'home-next' });
 initSlider({ slidesContainerId: 'ProjSlides', prevBtnId: 'proj-prev', nextBtnId: 'proj-next' });
 initSlider({ slidesContainerId: 'InternSlides', prevBtnId: 'intern-prev', nextBtnId: 'intern-next' });
+
+function openLightbox(img) {
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+}

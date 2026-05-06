@@ -3,11 +3,14 @@ html {
 }
 
 :root {
-    --nav-height: 50px;
+    --nav-height: 80px;
 }
 
 header {
-    font-size: 20px;
+    font-size: 1.3rem;
+    display: flex;
+    align-content: center;
+    padding: 1rem;
     background-image: url("port_images/port_header_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,9 +22,16 @@ header {
 }
 
 .headtext {
-    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
     margin-top: -1px;
     color: #660099;
+}
+
+.header_logo {
+    margin-right :1rem;
+    width: 60px;
+    height: 60px;
 }
 
 .container {
@@ -37,7 +47,7 @@ nav {
     top: var(--nav-height);
     width: 100%;
     height: var(--nav-height);
-    z-index: 1000;
+    z-index: 50;
 
 }
 
@@ -46,7 +56,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    padding-top: calc(var(--nav-height) * 2.3);
+    padding-top: calc(var(--nav-height) * 1.8);
 }
 
 nav ul {
@@ -75,15 +85,101 @@ nav ul li a {
     text-decoration: none;
 }
 
+.banner {
+    margin-bottom: 3rem;
+    color: white;
+    background-color: rgb(133, 2, 2);
+
+    & .ent {
+        font-size: 3rem;
+        font-weight: 1500;
+        text-align: center;
+        -webkit-text-stroke: 1px #686868;
+    }
+}
+
 nav ul li :hover {
     background-color: #663366;
     cursor: pointer;
 }
 
-.profile_pic {
-    width: 40%;
-    height: 65%;
+.hero_card {
+    border-left: 2px solid purple;
 
+    & .filenav {
+        margin: 2rem;
+
+        & ul {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            margin: 0;
+            padding: 1rem;
+            overflow: hidden;
+            border-top: 2px solid rgb(112, 112, 112);
+            border-bottom: 2px solid rgb(112, 112, 112);
+
+            & li {
+                overflow: hidden;
+            }
+
+            & li :hover {
+                background-color: #ff0000;
+                cursor: pointer;
+            }
+
+            & li a {
+                text-decoration: none;
+                color: #ffffff;
+                background-color: #000000;
+                padding: 0.5rem;
+                display: flex;
+                justify-content: center;
+                border-radius: 15px 15px;
+                font-weight: 600;
+
+            }
+
+        }
+    }
+}
+
+.hero-grid {
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    & .short {
+        white-space: nowrap;
+        line-height: 2;
+
+        & .name {
+            letter-spacing: 3;
+            font-family: "Prompt", sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        & ul {
+            font-family: "Prompt", sans-serif;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+    }
+
+
+
+    & .profile_pic {
+        margin: 0;
+        width: clamp(120px, 20vw, 180px);
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15), 0 4px 4px rgba(0, 0, 0, .15);
+    }
 }
 
 .aboutme_container {
@@ -128,7 +224,7 @@ nav ul li :hover {
 
 .grid-container-home {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: 2rem;
     /* ช่องว่างระหว่างคอลัมน์ */
     padding: 1rem;
@@ -159,13 +255,13 @@ nav ul li :hover {
         }
 
         & .card_info {
-            color: #f8f8f2;
+            color: rgb(226, 226, 226);
             margin-top: 0.2rem;
             font-size: 1rem;
             letter-spacing: 0.5px;
 
             & .edu_title {
-                color: red;
+                color: inherit;
             }
 
             & .edu_yr {
@@ -378,7 +474,8 @@ nav ul li :hover {
             margin: 0;
         }
 
-        & .proj_bandage, .intern_bandage {
+        & .proj_bandage,
+        .intern_bandage {
             text-align: center;
             font-size: 1.5rem;
             background: #7c3aed;
@@ -446,6 +543,304 @@ nav ul li :hover {
     margin-right: 2rem;
 }
 
+.hobbies_title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 0.5px black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.gallery-section {
+    background-color: #f8e3f5;
+    margin: 0;
+    padding: 1.5rem;
+    position: relative;
+
+    & .hobbies_title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #7c3aed;
+    }
+}
+
+.gallery-grid::before {
+    content: "";
+    background-image: url("port_images/gallary_bg.png");
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.gallery-grid {
+    position: relative;
+    margin: 2rem;
+    padding: 2.5rem;
+    border-radius: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    justify-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15), 0 4px 4px rgba(0, 0, 0, .15);
+    z-index: 1;
+    overflow: hidden;
+
+    & img {
+        width: 70%;
+        align-items: center;
+        aspect-ratio: 1;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        display: block;
+        object-fit: cover;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15), 0 4px 4px rgba(0, 0, 0, .15);
+        transition: opacity 0.2s;
+    }
+}
+
+.gallery-img:hover {
+    opacity: 0.7;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.lightbox.open {
+    display: flex;
+}
+
+/* แสดงตอนคลิก */
+
+#lightbox-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.series-section {
+    color: white;
+    background-color: #30302e;
+    margin: 0;
+    padding: 1.5rem;
+
+    & .hobbies_title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #e50914;
+        ;
+    }
+}
+
+.series-grid {
+    letter-spacing: 20;
+    background-color: #131312;
+    border-radius: 20px 20px;
+    margin: 2rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+
+    & .series_box {
+        border: 1px solid rgb(104, 99, 99);
+        border-radius: 10px 10px;
+        padding: 1rem;
+        line-height: 0.5;
+        letter-spacing: 3;
+
+        & .poster {
+            border-radius: 10px 10px;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & .series_name {
+            font-size: 1.3rem;
+        }
+
+        & .series_genres {
+            font-size: 1rem;
+            color: rgb(205, 198, 198);
+        }
+    }
+}
+
+.series_box .poster img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.music-section {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 1.5rem;
+
+    & .hobbies_title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #1f1f1f;
+    }
+
+}
+
+.music-grid {
+    margin-top: 1.2rem;
+    border-radius: 20px 20px;
+    display: grid;
+    align-items: stretch;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+
+    & .music_item {
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 10px 10px;
+        gap: 12px;
+
+        & .music_detail {
+            width: 120px;
+            flex-shrink: 0;
+
+            & .music_name {
+                color: #f8f8f2;
+                font-size: 1.2rem;
+            }
+
+            & .music_artist {
+                color: rgb(205, 198, 198);
+            }
+        }
+
+        & audio {
+            flex-shrink: 0;
+        }
+
+        & .music_bandage {
+            color: rgb(201, 1, 1);
+            border-radius: 10px;
+            padding: 0.5rem;
+            border: 1px solid gray;
+            text-align: center;
+            width: 100px;
+            font-size: smaller;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+    }
+
+    & img {
+        aspect-ratio: 1;
+        display: block;
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+}
+
+.fragrance-section {
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 1.5rem;
+
+    & .hobbies_title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #e88f8f;
+    }
+}
+
+.frag-grid {
+    background-color: #1f1f1f;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    & .frag-card {
+        background-color: #30302e;
+        border: 1px solid rgb(155, 147, 146);
+        border-radius: 10px 10px;
+        overflow: hidden;
+
+        & .card-body {
+            font-family: "Roboto Slab", serif;
+            padding-left: 1.2rem;
+            line-height: 1.4;
+
+            & .frag-name {
+                margin: 0;
+                color: rgb(249, 218, 218);
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+
+            & .frag-brand {
+                margin: 0;
+                margin-bottom: 0.5rem;
+                color: rgb(186, 186, 186);
+                font-weight: 700;
+                font-size: 1.2rem;
+                font-style: italic;
+            }
+
+            & span {
+                padding: 0.2rem;
+                border-radius: 8px 8px;
+            }
+
+            & .seasons {
+                margin-top: 0.5rem;
+                margin-bottom: 0.8rem;
+
+                & span {
+                    color: rgb(214, 192, 192);
+                    border: 0.5px solid rgb(186, 186, 186);
+                }
+
+            }
+
+            & .tags {
+                color: rgb(47, 13, 13);
+                -webkit-text-stroke: 0.1px rgb(112, 112, 112);
+                
+            }
+
+        }
+    }
+}
+
+& .frag-img {
+    border-bottom: 1px solid rgb(155, 147, 146);
+    margin-bottom: 0.8rem;
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
 
 /* Responsive — กลับเป็น 1 คอลัมน์บนมือถือ */
 @media (max-width: 768px) {
@@ -467,7 +862,7 @@ nav ul li :hover {
 
 .carousel {
     position: fixed;
-    width: 90%;
+    width: 100%;
     border: 1px solid #e9ecec;
     box-shadow: 0 0 10px rgba(0, 0, 0, .15), 0 4px 4px rgba(0, 0, 0, .15);
     overflow: hidden;
@@ -487,7 +882,6 @@ nav ul li :hover {
 }
 
 .slide img {
-    aspect-ratio: 16 / 9;
     object-fit: cover;
     width: 100%;
     height: 100%;
